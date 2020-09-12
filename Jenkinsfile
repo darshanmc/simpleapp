@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'npm build'
+                sh 'npm run build'
                 sh 'docker build --tag=device-ui-app .'
             }
         }
