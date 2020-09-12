@@ -16,6 +16,8 @@ pipeline {
         }
         stage('Deploy') {
             steps {
+                sh 'docker stop $(docker ps -aq) || true'
+                sh 'docker rm $(docker ps -aq) || true'
                 sh 'docker run -p 8000:80 device-ui-app'
             }
         }
