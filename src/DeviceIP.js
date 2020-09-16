@@ -49,7 +49,7 @@ class DeviceIP extends React.Component {
                     <div className="col">
                         <div className="card custom-size">
                             <div className="card-header">
-                                <h3>Enter Device IP Address</h3>
+                                <h3>Please Enter Device IP Address</h3>
                             </div>
                             <div className="card-body">
                                 <div className="card-text">
